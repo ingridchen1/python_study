@@ -12,7 +12,7 @@ print('Q1:段落長度', len(paragraph))
 # Q2
 lowertext = paragraph.lower()
 graphql = 'graphql'
-replacetext = lowertext.replace('graphql', graphql.upper())
+replacetext = lowertext.replace(graphql, graphql.upper())
 print('Q2:文字替換',replacetext)
 
 # Q3
@@ -21,7 +21,10 @@ print('Q3:字數總數', len(vocabulary))
 
 # Q4
 x = 2; y = 6
-x, y = y, x
+x = x+y
+y = x-y
+x = x-y
+
 print('Q4:x =', x, 'y =', y)
 
 
