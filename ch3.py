@@ -14,7 +14,11 @@ while a < len(data):
     a +=1
     try:
         index = data[a].index('歡樂水')
-        print('Q2:', index, data[2][2])
+        try:
+            index1 = data[index].index('歡樂水')
+            print('Q2:', index, data[index][index1])
+        except:
+            pass
     except:
         pass
 
